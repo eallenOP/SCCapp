@@ -5,27 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script><script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
-<script src="http://code.createjs.com/tweenjs-0.5.0.min.js"></script>
-<script src="http://code.createjs.com/movieclip-0.7.0.min.js"></script>
-<script src="SCCappTest.js"></script>
+      <link rel="stylesheet" href="css/app.css" />
+    <script src="js/vendor/modernizr.js"></script>
 
-<script>
-var canvas, stage, exportRoot;
 
-function init() {
-	canvas = document.getElementById("canvas");
-	exportRoot = new lib.SCCappTest();
-
-	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);
-	stage.update();
-	stage.enableMouseOver();
-
-	createjs.Ticker.setFPS(lib.properties.fps);
-	createjs.Ticker.addEventListener("tick", stage);
-}
-</script>
   </head>
   <body>
     
