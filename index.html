@@ -11,8 +11,8 @@
   </head>
   
   <body>
-    
-    <nav class="top-bar" data-topbar role="navigation">
+    <!-- Top bar navigation for large  (and small) screens -->
+    <nav class="top-bar hide-for-medium-only" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
           <h1><a href="#">SCC Handbook</a></h1>
@@ -38,30 +38,91 @@
           <li><a href="knots.html">Communications</a></li>
           <li><a href="knots.html">Dress &amp; Bearing</a></li>
           <li><a href="knots.html">Safety</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- end top bar for large screens -->
+    
+    <!-- Top bar navigation for medium only -->
+    <nav class="top-bar show-for-medium-only" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">SCC Handbook</a></h1>
+        </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon has-dropdown"><a href="#"><span></span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+    <!-- Right Nav Section -->
+        <ul class="right">
           
-      <!-- Dropdown for later
           <li class="has-dropdown">
-            <a href="knots.html">Knots</a>
+            <a href="#">Menu</a>
             <ul class="dropdown">
-              <li><a href="#">Practice</a></li>
-              <li><a href="#">Purpose</a></li>
-              <li class="active"><a href="#">Test</a></li>
+              <li><a href="knots.html">Knots</a></li>
+              <li class="has-dropdown not-click"><a href="#">Seamanship</a>
+                <ul class="dropdown">
+                  <li><a href="#">test</a></li>
+                  <li><a href="#">Boats &amp; Rigging</a></li>
+                  <li><a href="#">Anchors</a></li>
+                  <li><a href="#">Ropes</a></li>
+                </ul>
+              </li>
+              <li><a href="knots.html">Navigation</a></li>
+              <li><a href="knots.html">Communications</a></li>
+              <li><a href="knots.html">Dress &amp; Bearing</a></li>
+              <li><a href="knots.html">Safety</a></li>
             </ul>
-          </li> -->
+          </li>
         </ul>
 
-    <!-- Left Nav Section 
+    <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
-        </ul>-->
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <!-- -->
       </section>
     </nav>
     
+    <!-- Title and landing splash -->
     <header class="row">
-      <div class="small-9 small-push-3 columns"><h1>Sea Cadet Handbook</h1></div>
-      <div class="small-3 small-pull-9 columns"><img src="img/scccrest_2.png">
-      
+      <h1 class="text-center">Sea Cadet Handbook</h1>
+      <div class="small-12 columns">
+        <img src="img/#" alt="banner image goes here"> 
+      </div>
     </header>
+
+    <!-- Navigation panels start here -->
+    <nav class="row">
+      <ul class="small-block-grid-2 medium-block-grid-3">
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Knots</h4></a>
+        </li>
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Seamanship</h4></a>
+        </li>
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Navigation</h4></a>
+        </li>
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Communications</h4></a>
+        </li>
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Dress and Bearing</h4></a>
+        </li>
+        <li class="text-center">
+          <a href="#"><img src="img/scccrest_2.png">
+          <h4>Safety</h4></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of navigation panels -->
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
